@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Whack a Mole</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <h3 class="score-container">Score : <span class="score"></span></h3>
+        <h3 class="timer-container">Time Left : <span class="time-left"></span></h3>
+    </div>
+    <div class="board-container">
+        <div class="board">
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <div class="msg-container">
+            <h3>Game Over!</h3>
+            <p class="final-score">Your Score : <span>8</span></p>
+        </div>
+        <button class="play-btn">
+            <i class="fa fa-play"></i>
+        </button>
+    </div>
+
+    <audio src="./sounds/click.wav" id="click-sound"></audio>
+    <audio src="./sounds/hit.wav" id="hit-sound"></audio>
+    <audio src="./sounds/timer.wav" id="timer-sound"></audio>
+    <audio src="./sounds/game-over.wav" id="game-over-sound"></audio>
+
+    <script src="./app.js"></script>
+</body>
+</html>

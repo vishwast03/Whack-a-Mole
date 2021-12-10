@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #7cf337;
+    position: relative;
+}
+.scoreboard {
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    margin: 1.5rem auto;
+}
+.scoreboard h3 {
+    font-size: 2rem;
+}
+.board-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.board {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.square {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background: url('./images/hole.jpg');
+}
+.mole {
+    background: url('./images/mole.jpg');
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.play-btn {
+    background: transparent;
+    border: transparent;
+    font-size: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.btn-container button:hover {
+    color: rgb(53, 53, 53);
+}
+.msg-container {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.msg-container h3 {
+    font-size: 3rem;
+    color: #db3341;
+}
+.final-score {
+    font-size: 1.5rem;
+    color: #2d78ad;
+    margin: 1rem 0;
+}
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 500px;
+    height: 250px;
+    background: #dadada;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 2px black;
+}
+.game-over .msg-container {
+    display: flex;
+}
+audio {
+    display: none;
+}
